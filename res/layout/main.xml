@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget48"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="150px"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/nettetitle" >
+    </ImageView>
+
+    <CheckBox
+        android:id="@+id/alto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/treble"
+        android:layout_alignTop="@+id/tenor"
+        android:text="Alto" >
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/bass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tenor"
+        android:layout_alignTop="@+id/treble"
+        android:text="Bass" >
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/tenor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/title"
+        android:layout_below="@+id/treble"
+        android:text="Tenor" >
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/treble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerVertical="true"
+        android:text="Treble" >
+    </CheckBox>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="A JD Lehman Production: Copyright 2011" >
+    </TextView>
+
+    <Button
+        android:id="@+id/btnStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:text="Statistics"
+        android:onClick="btnStatistics" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnStats"
+        android:layout_alignBottom="@+id/btnStats"
+        android:layout_alignParentRight="true"
+        android:onClick="btnStart"
+        android:text="Start" />
+
+</RelativeLayout>
